@@ -7,13 +7,13 @@ public class Controller {
 	private Queue<Integer> flights;
 	private int numRoutes;
 	public Controller(int numRoutes) {
-		this.numRoutes=numRoutes;
-		available=new LinkedList<Integer>();
-		for(int i=0;i<numRoutes;i++) {
+		this.numRoutes = numRoutes;
+		available = new LinkedList<Integer>();
+		for(int i = 0 ; i < numRoutes ; i++) {
 			available.add(i);//add routes available to airport
 		}
-		inUse=new LinkedList<Integer>();
-		flights=new LinkedList<Integer>();
+		inUse = new LinkedList<Integer>();
+		flights = new LinkedList<Integer>();
 	}
 	public synchronized int routeAvailable(int numFlight) {
 		//will wait to until there is an available rout
