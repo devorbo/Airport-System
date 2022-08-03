@@ -7,7 +7,7 @@ public class Flight extends Thread {
 	
 	public Flight(int numFlight,Airport airDepart,Airport airLand) {
 		this.numFlight=numFlight;
-		this.airDepart=airDepart;//aliasing
+		this.airDepart=airDepart;
 		this.airLand=airLand;
 	}
 	
