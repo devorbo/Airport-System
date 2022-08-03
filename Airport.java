@@ -4,8 +4,8 @@ public class Airport {
 	
 	public Airport(String airportName,int numRoutes) {
 		System.out.println("New Airport "+airportName+" num routes "+numRoutes);
-		name=airportName;
-		this.con=new Controller(numRoutes);//controller for this airport
+		name = airportName;
+		this.con = new Controller(numRoutes);//controller for this airport
 	}
 	public String getName() {
 		return this.name;
